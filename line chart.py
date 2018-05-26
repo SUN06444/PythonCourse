@@ -10,3 +10,5 @@ import matplotlib.pyplot as plt #import 套件
 plt.plot([1,2,3,4], 'r') #plot畫折線圖(紅線)
 
 plt.show() #可加可不加
+
+plt.savefig('linechart0526.png')
