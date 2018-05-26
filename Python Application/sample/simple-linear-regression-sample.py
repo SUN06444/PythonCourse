@@ -22,16 +22,16 @@ def linear_regression(X, Y):
     for i in range(num):
         residual += (Y[i] - (a * X[i] + b)) ** 2
 
-    print expand(residual)
+    print (expand(residual))
     f1 = diff(residual, a)
     f2 = diff(residual, b)
-    print f1
-    print f2
+    print (f1)
+    print (f2)
     res = solve([f1, f2], [a, b])
     return res[a], res[b]
 
 a, b = linear_regression(data_X, data_Y)
-print a,b
+print (a,b)
 
 LR_X = X
 h = lambda x: a*x + b
